@@ -49,10 +49,8 @@ cd MajorProject-Backend-Auth
 
 
 2. Install dependencies :
-```bash
-npm install
+ npm install
 
 
 3.Run the application :
-```bash
-node app.js
+ node app.js
