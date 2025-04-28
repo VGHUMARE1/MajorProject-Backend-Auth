@@ -1,0 +1,17 @@
+{
+    "name": "auth-module",
+    "version": "1.0.0",
+    "main": "app.js",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cloudinary": "^1.41.3",
+        "connect-mongo": "^4.6.0",
+        "dotenv": "^16.5.0",
+        "express": "^4.21.2",
+        "express-session": "^1.18.1",
+        "mongoose": "^7.8.6",
+        "multer": "^1.4.5-lts.1",
+        "passport": "^0.6.0",
+        "passport-local": "^1.0.0"
+    }
+}
