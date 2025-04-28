@@ -23,7 +23,6 @@ A secure authentication system with user registration, login, and logout functio
 - **Authentication**: Passport.js
 - **Database**: MongoDB (Mongoose ODM)
 - **Cloud Storage**: Cloudinary
-- **Frontend**: HTML5, CSS3, JavaScript
 - **Middleware**: Multer, express-session
 
 
@@ -46,11 +45,15 @@ A secure authentication system with user registration, login, and logout functio
 ```bash
 git clone https://github.com/VGHUMARE1/MajorProject-Backend-Auth
 cd MajorProject-Backend-Auth
-
+```
 
 2. Install dependencies :
+ ```bash
  npm install
+```
 
 
 3.Run the application :
+```bash
  node app.js
+```
