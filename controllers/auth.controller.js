@@ -5,6 +5,7 @@ const upload = multer({ dest: 'uploads/' });
 
 const register = async (req, res) => {
     console.log(req.file)
+    console.log(req.body)
   try {
     const { name, email, phoneNumber, password ,photo} = req.body;
     
@@ -34,6 +35,7 @@ console.log(user)
 };
 
 const login = (req, res) => {
+    console.log(req.body)
   res.json({ message: 'Logged in successfully', user: req.user });
 };
 
