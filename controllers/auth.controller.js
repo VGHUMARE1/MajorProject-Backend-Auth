@@ -93,8 +93,8 @@ const isUserInApp = async (req, res) => {
     console.log("params : ");
     console.log(req.params);
   try {
-    const userId = req.user?._id;
-
+    const userId = req.body?._id;
+    
     if (!userId) {
       return res.status(401).json({ message: 'Unauthorized' });
     }
