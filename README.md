@@ -36,6 +36,7 @@ A secure authentication system with user registration, login, and logout functio
 | `/auth/register`    | POST   | Register a new user             | `multipart/form-data`         |
 | `/auth/login`       | POST   | Authenticate existing user      | `application/json`            |
 | `/auth/logout`      | POST   | Terminate user session          | -                            |
+| `/auth/userRes`      | POST   | Update userRes field          | `application/json`            |
 
 
 
