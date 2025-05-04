@@ -88,6 +88,10 @@ const logout = async (req, res) => {
 };
 
 const isUserInApp = async (req, res) => {
+    console.log("isuserInApp : ");
+    console.log(req.body);
+    console.log("params : ");
+    console.log(req.params);
   try {
     const userId = req.user?._id;
 
