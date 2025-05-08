@@ -88,13 +88,11 @@ const logout = async (req, res) => {
 };
 
 const isUserInApp = async (req, res) => {
-    console.log("isuserInApp : ");
-    console.log(req.body);
-    console.log("params : ");
-    console.log(req.params);
   try {
     const userId = req.body?._id;
-    
+    const latitude =req.body.latitude;
+    const longitude =req.body.longitude;
+
     if (!userId) {
       return res.status(401).json({ message: 'Unauthorized' });
     }
@@ -102,7 +100,7 @@ const isUserInApp = async (req, res) => {
     // Set userRes to false
     const updatedUser = await User.findByIdAndUpdate(
       userId,
-      { userRes: false },
+      { userRes: false ,latitude :latitude, logitude : longitude},
       { new: true }
     );
 
