@@ -88,6 +88,7 @@ const logout = async (req, res) => {
 };
 
 const isUserInApp = async (req, res) => {
+    console.log(req.body);
   try {
     const userId = req.body?._id;
     const latitude =req.body.latitude;
