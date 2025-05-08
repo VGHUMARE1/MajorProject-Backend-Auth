@@ -7,7 +7,9 @@ const userSchema = new mongoose.Schema({
   phoneNumber: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   userRes:{type:Boolean},
-  photo: { type: String, required: true }
+  photo: { type: String, required: true },
+  latitude : {type :String},
+  logitude:{type : String}
 });
 
 // Hash password before saving
